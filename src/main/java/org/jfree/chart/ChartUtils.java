@@ -224,7 +224,7 @@ public abstract class ChartUtils {
      * @throws IOException if there are any I/O problems.
      */
     public static void writeScaledChartAsPNG(OutputStream out,
-            JFreeChart chart, int width, int height, int widthScaleFactor,
+            JFreeChart chart, double width, double height, double widthScaleFactor,
             int heightScaleFactor) throws IOException {
 
         Args.nullNotPermitted(out, "out");
