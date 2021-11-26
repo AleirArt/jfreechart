@@ -1158,9 +1158,9 @@ public class DateAxis extends ValueAxis implements Cloneable, Serializable {
                 r = new DateRange();
             }
 
-            long upper = this.timeline.toTimelineValue(
+            double upper = this.timeline.toTimelineValue(
                     (long) r.getUpperBound());
-            long lower;
+            double lower;
             long fixedAutoRange = (long) getFixedAutoRange();
             if (fixedAutoRange > 0.0) {
                 lower = upper - fixedAutoRange;
