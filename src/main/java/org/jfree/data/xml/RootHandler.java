@@ -95,7 +95,7 @@ public class RootHandler extends DefaultHandler implements DatasetTags {
     public DefaultHandler getCurrentHandler() {
         DefaultHandler result = this;
         if (this.subHandlers != null) {
-            if (this.subHandlers.size() > 0) {
+            if (this.subHandlers.isEmpty()) {
                 Object top = this.subHandlers.peek();
                 if (top != null) {
                     result = (DefaultHandler) top;
